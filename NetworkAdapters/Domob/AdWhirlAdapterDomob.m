@@ -14,8 +14,6 @@
 #import "AdWhirlAdNetworkRegistry.h"
 #import "DMAdView.h"
 
-#define AD_SIZE CGSizeMake(300., 250.)
-
 @interface AdWhirlAdapterDomob()<DMAdViewDelegate>
 @end
 
@@ -30,13 +28,14 @@
 }
 
 -(void)getAd{
-    DMAdView* dmAdView = [[[DMAdView alloc] initWithPublisherId:networkConfig.pubId size:AD_SIZE autorefresh:NO] autorelease];
-    dmAdView.frame = CGRectMake(0, 0, AD_SIZE.width, AD_SIZE.height);
+    DMAdView* dmAdView = [[DMAdView alloc] initWithPublisherId:@"56OJyM1ouMGoULfJaL" placementId:@"16TLwebvAchkAY6iOMd734jz" size:DOMOB_AD_SIZE_300x250];
+    dmAdView.frame = CGRectMake(0, 0, DOMOB_AD_SIZE_300x250.width, DOMOB_AD_SIZE_300x250.height);
     dmAdView.delegate = self;
     dmAdView.rootViewController = [adWhirlView.delegate viewControllerForPresentingModalView];
     [dmAdView loadAd];
     
-    self.adNetworkView = dmAdView;    
+    self.adNetworkView = dmAdView;
+    
 }
 
 -(void)stopBeingDelegate{

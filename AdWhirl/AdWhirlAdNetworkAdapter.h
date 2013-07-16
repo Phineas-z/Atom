@@ -46,7 +46,9 @@ typedef enum {
   AdWhirlAdNetworkTypeTapAd             = 22,
   AdWhirlAdNetworkTypeOneRiot           = 23,
   AdWhirlAdNetworkTypeNexage            = 24,
-  AdWhirlAdNetworkTypeDomob             = 56    //多盟
+  AdWhirlAdNetworkTypeDomob             = 56,    //多盟
+  AdWhirlAdNetworkTypeMobisage          = 59,    //艾德思奇
+  AdWhirlAdNetworkTypeVpon              = 60     //Vpon
 } AdWhirlAdNetworkType;
 
 @class AdWhirlView;
