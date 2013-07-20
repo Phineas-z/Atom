@@ -34,7 +34,7 @@
     self.vponAd.strBannerId = networkConfig.pubId;   // 填入您的BannerId
     self.vponAd.delegate = self;
     self.vponAd.platform = TW;
-    [self.vponAd setAdAutoRefresh:YES];
+    [self.vponAd setAdAutoRefresh:NO];
     [self.vponAd setRootViewController:[adWhirlView.delegate viewControllerForPresentingModalView]];
     
     [self.vponAd startGetAd:[self getTestIdentifiers]];

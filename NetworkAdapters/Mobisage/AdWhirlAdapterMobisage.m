@@ -31,13 +31,10 @@
     //初始化ID
     [[MobiSageManager getInstance] setPublisherID:networkConfig.pubId];
     
-    //创建广告
-    MobiSageAdBanner * adBanner = [[MobiSageAdBanner alloc] initWithAdSize:Ad_300X250 withDelegate:self];
-    
-    //设置广告轮显方式
-    [adBanner setSwitchAnimeType:Random];
-    adBanner.frame = CGRectMake(0, 0, 320, 250);
-    
+    MobiSageAdPoster* adBanner = [[MobiSageAdPoster alloc] initWithAdSize:Poster_320X320 withDelegate:self];//Size用Poster枚举
+    //请求广告
+    [adBanner startRequestAD];
+        
     self.adNetworkView = adBanner;
     
     [adBanner release];
@@ -47,7 +44,7 @@
 }
 
 -(void)stopBeingDelegate{
-    MobiSageAdBanner* adBanner = (MobiSageAdBanner*)self.adNetworkView;
+    MobiSageAdPoster* adBanner = (MobiSageAdPoster*)self.adNetworkView;
     adBanner.delegate = nil;
     
     self.adNetworkView = nil;
