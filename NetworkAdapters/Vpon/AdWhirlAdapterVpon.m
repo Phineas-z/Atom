@@ -12,9 +12,11 @@
 #import "AdWhirlAdNetworkConfig.h"
 #import "AdWhirlAdNetworkAdapter+Helpers.h"
 #import "AdWhirlAdNetworkRegistry.h"
-#import "VponAdOn.h"
+#import "VponBanner.h"
+#import "AppDelegate.h"
 
-@interface AdWhirlAdapterVpon()<VponAdOnDelegate>
+@interface AdWhirlAdapterVpon()<VponBannerDelegate>
+@property (nonatomic, retain) VponBanner* vponAd;
 @end
 
 @implementation AdWhirlAdapterVpon
@@ -28,15 +30,21 @@
 }
 
 -(void)getAd{
-    [VponAdOn initializationPlatform:CN];
-    [[VponAdOn sharedInstance] setIsVponLogo:YES];
-    [[VponAdOn sharedInstance] setLocationOnOff:YES];
+    self.vponAd = [[[VponBanner alloc] initWithAdSize:VponAdSizeMediumRectangle origin:CGPointZero] autorelease];
+    self.vponAd.strBannerId = networkConfig.pubId;   // 填入您的BannerId
+    self.vponAd.delegate = self;
+    self.vponAd.platform = TW;
+    [self.vponAd setAdAutoRefresh:YES];
+    [self.vponAd setRootViewController:[adWhirlView.delegate viewControllerForPresentingModalView]];
     
-    self.adNetworkView = [[[VponAdOn sharedInstance] requestDelegate:self LicenseKey:[self licenseKey] size:ADON_SIZE_320x48].lastObject view];
+    [self.vponAd startGetAd:[self getTestIdentifiers]];
+    
+    self.adNetworkView = [self.vponAd getVponAdView];
 }
 
 -(void)stopBeingDelegate{
-    [[VponAdOn sharedInstance] setAdOnDelegate:nil];
+    self.vponAd.delegate = nil;
+    self.vponAd = nil;
     
     self.adNetworkView = nil;
 }
@@ -50,12 +58,25 @@
 }
 
 #pragma mark - VponAdOnDelegate
--(void)onRecevieAd:(UIViewController *)bannerView withLicenseKey:(NSString *)licenseKey{
-    [adWhirlView adapter:self didReceiveAdView:bannerView.view];
+
+-(void)onVponAdReceived:(UIView *)bannerView{
+    [adWhirlView adapter:self didReceiveAdView:bannerView];
 }
 
--(void)onFailedToRecevieAd:(UIViewController *)bannerView withLicenseKey:(NSString *)licenseKey{
-    [adWhirlView adapter:self didFailAd:nil];
+-(void)onVponAdFailed:(UIView *)bannerView didFailToReceiveAdWithError:(NSError *)error{
+    [adWhirlView adapter:self didFailAd:error];
 }
+
+-(NSArray*)getTestIdentifiers
+{
+    return @[@"ec56bc0f14e6b5bb080ab547d811cd62"];
+}
+
+//-(NSArray*)getTestIdentifiers
+//{
+//    return [NSArray arrayWithObjects:
+//            // add your test UUID
+//            nil];
+//}
 
 @end

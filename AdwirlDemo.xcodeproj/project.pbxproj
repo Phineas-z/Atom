@@ -42,7 +42,6 @@
 		90013E5B17952587007E3E96 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90013E2A17952586007E3E96 /* libGoogleAdMobAds.a */; };
 		90013E5C17952587007E3E96 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 90013E2B17952586007E3E96 /* README.txt */; };
 		90013E63179526D5007E3E96 /* AdWhirlAdapterGoogleAdMobAds.m in Sources */ = {isa = PBXBuildFile; fileRef = 90013E62179526D5007E3E96 /* AdWhirlAdapterGoogleAdMobAds.m */; };
-		90013E691795279D007E3E96 /* libAdOn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90013E661795279D007E3E96 /* libAdOn.a */; };
 		90013E6D179527DD007E3E96 /* AdWhirlAdapterVpon.m in Sources */ = {isa = PBXBuildFile; fileRef = 90013E6C179527DD007E3E96 /* AdWhirlAdapterVpon.m */; };
 		90013ECC17952FE6007E3E96 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 90013E7017952FE6007E3E96 /* JSONKit.m */; };
 		90013ECD17952FE6007E3E96 /* libMobiSageRecommend.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90013E7117952FE6007E3E96 /* libMobiSageRecommend.a */; };
@@ -81,6 +80,9 @@
 		90013EEE17952FE6007E3E96 /* MSTencentWeiboAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 90013ECB17952FE6007E3E96 /* MSTencentWeiboAdd.m */; };
 		90013EF217953041007E3E96 /* AdWhirlAdapterMobisage.m in Sources */ = {isa = PBXBuildFile; fileRef = 90013EF117953041007E3E96 /* AdWhirlAdapterMobisage.m */; };
 		90013EF617953563007E3E96 /* AdWhirlAdapterIAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 90013EF517953563007E3E96 /* AdWhirlAdapterIAd.m */; };
+		90013EFB17964561007E3E96 /* libAdOn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90013EF817964561007E3E96 /* libAdOn.a */; };
+		90013EFD179646AA007E3E96 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90013EFC179646AA007E3E96 /* AssetsLibrary.framework */; };
+		901DE24D17967F7A00891748 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901DE24C17967F7A00891748 /* AddressBookUI.framework */; };
 		9032C4DF1784028200480D47 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9032C4DE1784028200480D47 /* UIKit.framework */; };
 		9032C4E11784028200480D47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9032C4E01784028200480D47 /* Foundation.framework */; };
 		9032C4E31784028200480D47 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9032C4E21784028200480D47 /* CoreGraphics.framework */; };
@@ -219,10 +221,6 @@
 		90013E2B17952586007E3E96 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		90013E61179526D5007E3E96 /* AdWhirlAdapterGoogleAdMobAds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdWhirlAdapterGoogleAdMobAds.h; sourceTree = "<group>"; };
 		90013E62179526D5007E3E96 /* AdWhirlAdapterGoogleAdMobAds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdWhirlAdapterGoogleAdMobAds.m; sourceTree = "<group>"; };
-		90013E651795279D007E3E96 /* AdOnPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdOnPlatform.h; sourceTree = "<group>"; };
-		90013E661795279D007E3E96 /* libAdOn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdOn.a; sourceTree = "<group>"; };
-		90013E671795279D007E3E96 /* POIAdOn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIAdOn.h; sourceTree = "<group>"; };
-		90013E681795279D007E3E96 /* VponAdOn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VponAdOn.h; sourceTree = "<group>"; };
 		90013E6B179527DD007E3E96 /* AdWhirlAdapterVpon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdWhirlAdapterVpon.h; sourceTree = "<group>"; };
 		90013E6C179527DD007E3E96 /* AdWhirlAdapterVpon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdWhirlAdapterVpon.m; sourceTree = "<group>"; };
 		90013E6F17952FE6007E3E96 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
@@ -298,6 +296,11 @@
 		90013EF117953041007E3E96 /* AdWhirlAdapterMobisage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdWhirlAdapterMobisage.m; sourceTree = "<group>"; };
 		90013EF417953563007E3E96 /* AdWhirlAdapterIAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdWhirlAdapterIAd.h; sourceTree = "<group>"; };
 		90013EF517953563007E3E96 /* AdWhirlAdapterIAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdWhirlAdapterIAd.m; sourceTree = "<group>"; };
+		90013EF817964561007E3E96 /* libAdOn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdOn.a; sourceTree = "<group>"; };
+		90013EF917964561007E3E96 /* VponBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VponBanner.h; sourceTree = "<group>"; };
+		90013EFA17964561007E3E96 /* VponInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VponInterstitial.h; sourceTree = "<group>"; };
+		90013EFC179646AA007E3E96 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		901DE24C17967F7A00891748 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		9032C4DB1784028200480D47 /* AdwirlDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdwirlDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9032C4DE1784028200480D47 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9032C4E01784028200480D47 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -389,6 +392,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901DE24D17967F7A00891748 /* AddressBookUI.framework in Frameworks */,
+				90013EFD179646AA007E3E96 /* AssetsLibrary.framework in Frameworks */,
 				90013DC417952250007E3E96 /* Social.framework in Frameworks */,
 				9032C7AD1784070A00480D47 /* CoreMedia.framework in Frameworks */,
 				9032C594178404B100480D47 /* MessageUI.framework in Frameworks */,
@@ -425,9 +430,9 @@
 				90013DA417951C76007E3E96 /* libInMobiCommons-3.7.0.a in Frameworks */,
 				90013DC2179521F2007E3E96 /* libDomobAdSDK.a in Frameworks */,
 				90013E5B17952587007E3E96 /* libGoogleAdMobAds.a in Frameworks */,
-				90013E691795279D007E3E96 /* libAdOn.a in Frameworks */,
 				90013ECD17952FE6007E3E96 /* libMobiSageRecommend.a in Frameworks */,
 				90013ECE17952FE6007E3E96 /* libMobiSageSDK.a in Frameworks */,
+				90013EFB17964561007E3E96 /* libAdOn.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,8 +442,8 @@
 		90013C12178EE66A007E3E96 /* NetworkSDKs */ = {
 			isa = PBXGroup;
 			children = (
+				90013EF717964561007E3E96 /* VponSDK */,
 				90013E6E17952FE6007E3E96 /* MobiSageSDK */,
-				90013E641795279D007E3E96 /* VponSDK */,
 				90013DC517952586007E3E96 /* GoogleAdMobAdsSdkiOS-6.4.2 */,
 				90013DB8179521F2007E3E96 /* DomobAdSDK */,
 				90013D9917951C76007E3E96 /* InmobiSDK */,
@@ -641,17 +646,6 @@
 				90013E62179526D5007E3E96 /* AdWhirlAdapterGoogleAdMobAds.m */,
 			);
 			path = Admob;
-			sourceTree = "<group>";
-		};
-		90013E641795279D007E3E96 /* VponSDK */ = {
-			isa = PBXGroup;
-			children = (
-				90013E651795279D007E3E96 /* AdOnPlatform.h */,
-				90013E661795279D007E3E96 /* libAdOn.a */,
-				90013E671795279D007E3E96 /* POIAdOn.h */,
-				90013E681795279D007E3E96 /* VponAdOn.h */,
-			);
-			path = VponSDK;
 			sourceTree = "<group>";
 		};
 		90013E6A179527B1007E3E96 /* Vpon */ = {
@@ -949,6 +943,16 @@
 			path = IAd;
 			sourceTree = "<group>";
 		};
+		90013EF717964561007E3E96 /* VponSDK */ = {
+			isa = PBXGroup;
+			children = (
+				90013EF817964561007E3E96 /* libAdOn.a */,
+				90013EF917964561007E3E96 /* VponBanner.h */,
+				90013EFA17964561007E3E96 /* VponInterstitial.h */,
+			);
+			path = VponSDK;
+			sourceTree = "<group>";
+		};
 		9032C4D21784028200480D47 = {
 			isa = PBXGroup;
 			children = (
@@ -972,6 +976,8 @@
 		9032C4DD1784028200480D47 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				901DE24C17967F7A00891748 /* AddressBookUI.framework */,
+				90013EFC179646AA007E3E96 /* AssetsLibrary.framework */,
 				90013DC317952250007E3E96 /* Social.framework */,
 				9032C7AC1784070A00480D47 /* CoreMedia.framework */,
 				9032C593178404B100480D47 /* MessageUI.framework */,
@@ -1397,6 +1403,8 @@
 				);
 				OTHER_LDFLAGS = (
 					"-force_load",
+					NetworkSDKs/VponSDK/libAdOn.a,
+					"-force_load",
 					"NetworkSDKs/GoogleAdMobAdsSdkiOS-6.4.2/libGoogleAdMobAds.a",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1462,6 +1470,8 @@
 					"\"$(SRCROOT)/NetworkSDKs/MobiSageSDK\"",
 				);
 				OTHER_LDFLAGS = (
+					"-force_load",
+					NetworkSDKs/VponSDK/libAdOn.a,
 					"-force_load",
 					"NetworkSDKs/GoogleAdMobAdsSdkiOS-6.4.2/libGoogleAdMobAds.a",
 				);
